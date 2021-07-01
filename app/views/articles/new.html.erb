@@ -10,6 +10,14 @@
   </div>
 
   <div>
+  <%= form.label :category %><br>
+    <%= form.select :category_id,Category.all.pluck(:name,:id),{prompt:'select'},{class: "form-control"}%>
+    <% @article.errors.full_messages_for(:category_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
     <%= form.label :body %><br>
     <%= form.text_area :body %><br>
     <% @article.errors.full_messages_for(:body).each do |message| %>

@@ -1,13 +1,19 @@
-<h1>Articles index</h1><br><br>
+<h1>Articles index</h1><br>
 <h3>Hi,</h3>
 <h3><%= current_user.name  %></h3><br>
 
+
 <ul>
-  <% @articles.each do |article| %>
+  <% @category.each do |category| %>
     <li>
+       <%= category.name %>
+      <% category.articles.each do |article| %>
+    
       <a href="<%= article_path(article) %>">
         <%= article.title %>
       </a>
+    
+  <% end %>
     </li>
   <% end %>
 </ul>

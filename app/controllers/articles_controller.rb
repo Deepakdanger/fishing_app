@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
 
     def index
         @articles = Article.all
+        @category = Category.all
     end
     
     def show
@@ -15,7 +16,6 @@ class ArticlesController < ApplicationController
 
     def create
         @article = current_user.articles.new(article_params)
-    
         if @article.save
           redirect_to @article , notice: 'Article is successfully created'
         else
@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
 
     private
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :category_id)
     end
 
 end
