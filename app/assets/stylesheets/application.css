@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+.color1 {
+  color: #FD6000;
+}
+
+.icon1 {
+  color: #FD6000;
+  margin-left: 5px;
+  padding-top: 3px;
+}
+
+.footer1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgb(65, 58, 51);
+    height: 50px;
+    align-items: center;
+    color: white;
+}
