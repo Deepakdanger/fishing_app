@@ -17,6 +17,30 @@
   color: #FD6000;
 }
 
+.nav-link {
+  font-weight: 500;
+  color: rgb(226, 30, 30);
+}
+
+.signing a {
+  color: rgb(46, 45, 45) !important;
+}
+
+.dropdown-menu {
+    height: 500px;
+    width: 15rem;
+    font-weight: 500;
+    color: rgb(253, 10, 91);
+    background-color: greenyellow;
+}
+
+.dropdown-menu a{
+  font-weight: 500;
+  color: grey;
+        
+}
+
+
 .icon1 {
   color: #FD6000;
   margin-left: 5px;
@@ -27,8 +51,10 @@
     position: absolute;
     width: 100%;
     bottom: 0px;
+    font-size: auto;
     background-color: rgb(65, 58, 51);
-    height: 50px;
+    height: auto;
+    justify-content: center;
     align-items: center;
     color: white;
 }

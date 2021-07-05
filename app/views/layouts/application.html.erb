@@ -21,12 +21,12 @@
 
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="dropdown d-lg-none">
+  <div class="dropdown ">
     <button type="button" class="btn " data-toggle="dropdown">
       <i class="fas fa-hamburger fa-lg"></i>
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item color1" href="#">HOME</a>
+      <a class="dropdown-item" href="#">HOME</a>
       <a class="dropdown-item" href="#">RIVER</a>
       <a class="dropdown-item" href="#">POND</a>
       <a class="dropdown-item" href="#">SEA</a>
@@ -35,7 +35,10 @@
       <li class="dropdown-divider"></li>
       <a class="dropdown-item" href="#">CREATE ARTICLE</a>
       <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %>      
-       <% end %> 
+       <% else %>
+        <%= link_to 'LOGIN', user_session_path %>     |
+        <%= link_to 'SIGN UP', user_session_path %>
+      <% end %>
     </div>
   </div>
 
@@ -44,7 +47,7 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link color1" href="#">HOME</a>
+          <a class="nav-link " href="#">HOME</a>
         </li>
          
         <li class="nav-item">
@@ -61,7 +64,7 @@
         </li>
         <% if current_user %>
         <li class="nav-item">
-          <a class="nav-link btn btn-primary text-white" href="#">CREATE ARTICLE</a>
+          <a class="nav-link" href="#">CREATE ARTICLE</a>
         </li> 
         <% end %>    
       </ul>      
@@ -72,11 +75,12 @@
       HELLO,
       <p><%= link_to current_user.name, articles_path(current_user)%></p>
       </div>
-      <div class="btn d-flex">
+      <div class="btn d-flex signing">
         <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %>    
 
       <% else %>
-        <%= link_to 'LOGIN', user_session_path %>
+        <%= link_to 'LOGIN', user_session_path %>     |
+        <%= link_to 'SIGN UP', user_session_path %>
       <% end %>
       </div>
     </div>
@@ -88,14 +92,14 @@
     <%= yield %>
     
     <div class="footer col-14 d-flex footer1">
-      <a class="navbar-brand col-4" href="#">Fi-SHOP</a>
-      <div class="d-flex col-6">    
+      <a class="navbar-brand col-3" href="#">Fi-SHOP</a>
+      <div class="d-flex col-5">    
           <p class=" color1"> Privacy Policy </p>
           <p class="ml-2 color1">Term & Condition</p>
           <p class="ml-2"> Copyright.All Right Reserved</p>
         
       </div>
-      <div class="d-flex col-3 tect-align-center">
+      <div class="d-flex tect-align-center">
         Connect with Us:<i class="fab fa-facebook fa-lg icon1"></i><i class="icon1 fab fa-twitter-square fa-lg"></i><i class=" icon1 fab fa-instagram-square fa-lg"></i>
       </div>
 
