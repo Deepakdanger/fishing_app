@@ -17,6 +17,14 @@
   color: #FD6000;
 }
 
+nav {
+  position: fixed !important;
+  width: 100%;
+  height: auto;
+  top: 0px;
+  z-index: 100;
+}
+
 .nav-link {
   font-weight: 500;
   color: rgb(226, 30, 30);
@@ -31,12 +39,12 @@
     width: 15rem;
     font-weight: 500;
     color: rgb(253, 10, 91);
-    background-color: greenyellow;
+    background-color: rgb(65, 58, 51) !important;
 }
 
 .dropdown-menu a{
   font-weight: 500;
-  color: grey;
+  color: rgb(255, 255, 255);
         
 }
 
@@ -48,7 +56,7 @@
 }
 
 .footer1 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0px;
     font-size: auto;

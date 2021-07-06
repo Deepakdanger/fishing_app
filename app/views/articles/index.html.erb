@@ -1,3 +1,23 @@
+<div class="most_popular" style="background-image: url(<%= asset_path Vote.popular.first.article.image  %>)" >
+  <div class="most_popular_title">
+      
+      <%= Vote.popular.first.article.title %>
+  </div>
+  <p class="most_popular_body"><%= Vote.popular.first.article.body %></p>
+
+</div>
+
+<div class="grid_container">
+  <% @category.each do |category| %>
+    <div class="category_containor">
+       <%= category.name %>
+       <div class="feature">
+       </div>
+    </div>
+</div>
+ <% end %>
+
+
 
 
 

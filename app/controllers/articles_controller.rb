@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
 
     def create
         @article = current_user.articles.new(article_params)
+        @article.image = "default.jpg" if @article.image == nil
         if @article.save
           redirect_to @article , notice: 'Article is successfully created'
         else

@@ -1,3 +1,57 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.most_popular {
+  margin-top: 3.5rem;
+  margin: 0.2rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 35rem;
+  color: wheat;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.most_popular_title {
+  margin-left: 2rem;
+  position: absolute;
+  bottom: 21%;
+  width: auto;
+  font-weight: 500;
+  color: #fd6000;
+}
+.most_popular_body {
+  margin-left: 2rem;
+  position: absolute;
+  bottom: 10%;
+  width: auto;
+  font-weight: 500;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.feature {
+  height: 3rem;
+  width: 3rem;
+  background-color: aqua;
+}
+
+.container {
+    margin-top: 5rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+    color: wheat;
+}
+
+.article_show a {
+    color: white;
+}
+
+.article_show a:hover {
+    color: yellow;
+    text-decoration: none;
+}

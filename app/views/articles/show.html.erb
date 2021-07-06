@@ -1,8 +1,11 @@
-<h1> Articleshow </h1>
+
+<div class="container" style="background-image: url(<%= asset_path @article.image  %>) ">
+<div class="article_show"> 
+<h4><%= @article.title %></h4>
+<p><%= @article.body %></p><br>
+<%= vote_or_unvote_btn(@article) %>
+</div>
+</div>
 
 
-<h1><%= @article.title %></h1>
-
-<p><%= @article.body %></p>
-<br>
- <%= vote_or_unvote_btn(@article) %>
+ 
