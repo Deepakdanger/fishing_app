@@ -26,14 +26,10 @@
       <i class="fas fa-hamburger fa-lg"></i>
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">HOME</a>
-      <a class="dropdown-item" href="#">RIVER</a>
-      <a class="dropdown-item" href="#">POND</a>
-      <a class="dropdown-item" href="#">SEA</a>
-      <a class="dropdown-item" href="#">POND</a>
+      <a class="dropdown-item" href= / >HOME</a>
       <% if current_user %>
       <li class="dropdown-divider"></li>
-      <a class="dropdown-item" href="#">CREATE ARTICLE</a>
+      <p><%= link_to " CREATE ARTICLE", new_article_path %></p>
       <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %>      
        <% else %>
         <%= link_to 'LOGIN', user_session_path %>     |
@@ -47,24 +43,12 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link " href="#">HOME</a>
+          <a class="nav-link " href=/ >HOME</a>
         </li>
          
-        <li class="nav-item">
-          <a class="nav-link" href="#">RIVER</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">POND</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">SEA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">OCEAN</a>
-        </li>
         <% if current_user %>
         <li class="nav-item">
-          <a class="nav-link" href="#">CREATE ARTICLE</a>
+         <p class="nav-link "> <%= link_to " CREATE ARTICLE", new_article_path%></p>
         </li> 
         <% end %>    
       </ul>      
@@ -73,7 +57,7 @@
     <% if current_user %>
       <div class="ml-2 mr-2">
       HELLO,
-      <p><%= link_to current_user.name, articles_path(current_user)%></p>
+      <p><%= current_user.name %></p>
       </div>
       <div class="btn d-flex signing">
         <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %>    

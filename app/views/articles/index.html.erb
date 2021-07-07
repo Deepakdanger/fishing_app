@@ -1,7 +1,7 @@
 <div class="most_popular" style="background-image: url(<%= asset_path Vote.popular.first.article.image  %>)" >
   <div class="most_popular_title">
       
-      <%= Vote.popular.first.article.title %>
+      <%= link_to Vote.popular.first.article.title, article_path(Vote.popular.first.article) %>
   </div>
   <p class="most_popular_body"><%= Vote.popular.first.article.body %></p>
 
@@ -11,10 +11,10 @@
   <% @category.each do |category| %>
 
     <div class="category_container" style="background-image: url(<%= asset_path category.articles.most_recent.first.image  %>)" >
-       <p class="category_name"><%= category.name %> </p>
+       <p class="category_name"><%= link_to category.name,  category_path(category) %> </p>
        
        <div class="category_recent_title">
-       <%=  category.articles.most_recent.first.title%>
+       <%= link_to category.articles.most_recent.first.title,  article_path(category.articles.most_recent.first) %>
        </div>
     </div>
 
@@ -23,29 +23,3 @@
 
 
 
-
-
-<%= Vote.popular.first.article.title %>
-
-<%= link_to "New Article", new_article_path %>
-
-<h1>Articles index</h1><br>
-<h3>Hi,</h3>
-<h3><%= current_user.name  %></h3><br>
-
-
-<ul>
-  <% @category.each do |category| %>
-    <li>
-      <a href="<%= category_path(category) %>">
-       <%= category.name %>
-      <% category.articles.each do |article| %>
-    
-      <a href="<%= article_path(article) %>">
-        <%= article.title %>
-      </a>
-    
-  <% end %>
-    </li>
-  <% end %>
-</ul>

@@ -30,8 +30,17 @@ nav {
 }
 
 .nav-link {
-  font-weight: 500;
+  font-weight: bolder;
   color: rgb(226, 30, 30);
+}
+.nav-link a {
+  color: rgb(68, 66, 66);
+  font-weight: bolder;
+}
+.nav-link a:hover {
+  color: rgb(54, 51, 51);
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 .signing a {
