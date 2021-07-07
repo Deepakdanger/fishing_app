@@ -1,3 +1,21 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.category_page {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0.2rem;
+}
+
+.category_article_container {
+  width: 98%;
+  height: 17rem;
+  display: flex;
+  border: chocolate 1px solid;
+}
+
+.article_background {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 48%;
+}
