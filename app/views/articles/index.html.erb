@@ -7,15 +7,19 @@
 
 </div>
 
-<div class="grid_container">
+  <div class="grid_container">
   <% @category.each do |category| %>
-    <div class="category_containor">
-       <%= category.name %>
-       <div class="feature">
+
+    <div class="category_container" style="background-image: url(<%= asset_path category.articles.most_recent.first.image  %>)" >
+       <p class="category_name"><%= category.name %> </p>
+       
+       <div class="category_recent_title">
+       <%=  category.articles.most_recent.first.title%>
        </div>
     </div>
-</div>
+
  <% end %>
+ </div>
 
 
 
@@ -23,6 +27,7 @@
 
 <%= Vote.popular.first.article.title %>
 
+<%= link_to "New Article", new_article_path %>
 
 <h1>Articles index</h1><br>
 <h3>Hi,</h3>
@@ -32,6 +37,7 @@
 <ul>
   <% @category.each do |category| %>
     <li>
+      <a href="<%= category_path(category) %>">
        <%= category.name %>
       <% category.articles.each do |article| %>
     
@@ -43,5 +49,3 @@
     </li>
   <% end %>
 </ul>
-
-<%= link_to "New Article", new_article_path %>

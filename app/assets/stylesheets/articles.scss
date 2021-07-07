@@ -31,12 +31,32 @@
 .grid_container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+    
 }
 
-.feature {
-  height: 3rem;
-  width: 3rem;
-  background-color: aqua;
+.category_container {
+  background-color: rgb(255, 134, 195);
+  height: 13rem;
+  width: 98%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-left: 0.2rem;
+}
+
+.category_name {
+  padding: 1rem;
+  color: white;
+  text-decoration: underline yellow;
+  font-weight: 400;
+}
+
+.category_recent_title {
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    color: white;
+    font-weight: 400;
 }
 
 .container {
