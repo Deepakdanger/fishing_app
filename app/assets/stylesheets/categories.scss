@@ -1,6 +1,7 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
 .category_page {
   display: grid;
   grid-template-columns: auto auto;
@@ -16,7 +17,7 @@
   margin-top: 0.2rem;
 }
 
-.article_background {  
+.article_background {
   width: 48%;
   background-color: blueviolet;
 }
@@ -58,6 +59,6 @@
 
 @media only screen and (max-width: 768px) {
     .category_page {
-    grid-template-columns: auto;      
+    grid-template-columns: auto;
   }
 }

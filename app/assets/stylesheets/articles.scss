@@ -137,6 +137,7 @@
   height: 100%;
   width: 100%;
 }
+
 .article_show_image1 {
   height: 100%;
   width: 100%;
@@ -179,13 +180,13 @@
 .form_label {
   color: #fd6000;
   font: bolder;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 .form_field {
   width: 90%;
   border: none;
-  border-bottom: #3f210e 3px solid;  
+  border-bottom: #3f210e 3px solid;
 }
 
 .form-control {
@@ -205,6 +206,6 @@
 
 @media only screen and (max-width: 768px) {
   .grid_container {
-    grid-template-columns: auto auto;      
+    grid-template-columns: auto auto;
   }
 }
