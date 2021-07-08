@@ -142,6 +142,67 @@
   width: 100%;
 }
 
+.backgound_div {
+  position: relative;
+  margin-top: 4rem;
+  height: 50rem;
+  width: 100%;
+}
+
+.login_top {
+  margin-top: -2rem;
+}
+
+.backgound_dark {
+  background-color: #271606;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.form_div {
+  position: absolute;
+  background-color: white;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  padding-left: 5rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.form_full {
+  margin-top: 1.5rem;
+}
+
+.form_label {
+  color: #fd6000;
+  font: bolder;
+  font-weight: 700;  
+}
+
+.form_field {
+  width: 90%;
+  border: none;
+  border-bottom: #3f210e 3px solid;  
+}
+
+.form-control {
+  width: 90% !important;
+}
+
+.submit_button {
+  border-radius: 3px;
+  border: none;
+  background-color: #fd6000;
+  color: white;
+}
+
+.submit_button:hover {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 768px) {
   .grid_container {
     grid-template-columns: auto auto;      

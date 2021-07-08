@@ -13,6 +13,8 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');</style>
    <script
       src="https://kit.fontawesome.com/9875f697fa.js"
       crossorigin="anonymous"
@@ -21,7 +23,7 @@
 
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="dropdown ">
+  <div class="dropdown d-lg-none">
     <button type="button" class="btn " data-toggle="dropdown">
       <i class="fas fa-hamburger fa-lg"></i>
     </button>
@@ -38,11 +40,11 @@
     </div>
   </div>
 
-    <a class="navbar-brand" href="#">Fi-SHOP</a>
+    <a class="navbar-brand" href=/ >Fi-SHOP</a>
     
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link " href=/ >HOME</a>
         </li>
          
@@ -60,11 +62,11 @@
       <p><%= current_user.name %></p>
       </div>
       <div class="btn d-flex signing">
-        <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %>    
+        <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete, :class => 'login_nav' %>    
 
       <% else %>
-        <%= link_to 'LOGIN', user_session_path %>     |
-        <%= link_to 'SIGN UP', user_session_path %>
+        <%= link_to 'LOGIN', user_session_path , :class => 'login_nav' %>     |
+        <%= link_to "Sign up", new_registration_path(resource_name) , :class => 'login_nav' %>
       <% end %>
       </div>
     </div>

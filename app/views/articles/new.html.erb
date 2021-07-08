@@ -1,39 +1,43 @@
-<h1>New Article</h1>
 
+<div class="backgound_div">
+<p class="backgound_dark"></p>
+<div class="form_div">
 <%= form_with model: @article do |form| %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+  <div class="form_full">
+    <%= form.label :title , :class =>"form_label" %><br>
+    <%= form.text_field :title , :class =>"form_field"%>
     <% @article.errors.full_messages_for(:title).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
-  <div>
-  <%= form.label :category %><br>
+  <div class="form_full">
+  <%= form.label :category , :class =>"form_label"%><br>
     <%= form.select :category_id,Category.all.pluck(:name,:id),{prompt:'select'},{class: "form-control"}%>
     <% @article.errors.full_messages_for(:category_id).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
-  <div>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %><br>
+  <div class="form_full">
+    <%= form.label :body , :class =>"form_label"%><br>
+    <%= form.text_area :body , :class =>"form_field"%><br>
     <% @article.errors.full_messages_for(:body).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
-  <div>
-    <%= form.label :image %><br>
+  <div class="form_full">
+    <%= form.label :image , :class =>"form_label"%><br>
     <%= form.file_field :image %><br>
     <% @article.errors.full_messages_for(:image).each do |message| %>
       <div><%= message %></div>
       <% end %>
   </div><br>
 
-  <div>
-    <%= form.submit %>
+  <div class="form_full">
+    <%= form.submit 'Create Article', :class => 'submit_button' %>
   </div>
 <% end %>
+</div>
+</div>
