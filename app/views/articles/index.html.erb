@@ -1,3 +1,5 @@
+
+<%if Article.count > 3 %>
 <div class="most_popular" >
   <div class="most_popular_title">
       
@@ -21,6 +23,8 @@
 
  <% end %>
  </div>
-
+<%else%>
+<p>No Article</p>
+ <% end %>
 
 
