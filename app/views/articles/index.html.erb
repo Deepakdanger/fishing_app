@@ -1,16 +1,17 @@
-<div class="most_popular" style="background-image: url(<%= asset_path Vote.popular.first.article.image  %>)" >
+<div class="most_popular" >
   <div class="most_popular_title">
       
       <%= link_to Vote.popular.first.article.title, article_path(Vote.popular.first.article) %>
   </div>
   <p class="most_popular_body"><%= Vote.popular.first.article.body %></p>
-
+  <p class="most_popular_image"><%= image_tag Vote.popular.first.article.image , :class =>"popularimage" if Vote.popular.first.article.image.attached? %></p><br>
 </div>
 
   <div class="grid_container">
   <% @category.each do |category| %>
 
-    <div class="category_container" style="background-image: url(<%= asset_path category.articles.most_recent.first.image  %>)" >
+    <div class="category_container">
+        <p class="category_recent_image"><%= image_tag category.articles.most_recent.first.image , :class =>"categoryrecentimage" if category.articles.most_recent.first.image.attached? %></p><br>
        <p class="category_name"><%= link_to category.name,  category_path(category) %> </p>
        
        <div class="category_recent_title">

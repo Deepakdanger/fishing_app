@@ -4,12 +4,23 @@
 .most_popular {
   margin-top: 3.5rem;
   margin: 0.2rem;
-  background-repeat: no-repeat;
   width: 100%;
   height: 35rem;
   color: wheat;
   position: relative;
   background-size: 100% 100%;
+  position: relative;
+}
+
+.most_popular_image {
+  position: absolute;
+  top: 8%;
+  height: 35rem;
+  z-index: -5;
+}
+.popularimage{
+  width: 100%;
+  height: 32rem;
 }
 
 .most_popular_title {
@@ -47,10 +58,14 @@
   background-color: rgb(255, 134, 195);
   height: 13rem;
   width: 98%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   position: relative;
   margin-left: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.category_name {
+  position: absolute;
+  top: 5%;
 }
 
 .category_name a {
@@ -64,10 +79,14 @@
   color: white;
 }
 
-.category_recent_title a {
+.category_recent_title {
   position: absolute;
   left: 30%;
   bottom: 5%;
+}
+
+.category_recent_title a {
+  
   color: white;
   font-weight: 400;
 }
@@ -77,12 +96,32 @@
   color: white;
 }
 
+.category_recent_image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.categoryrecentimage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .container {
-  margin-top: 5rem;
+  margin-top: 4rem;
   background-repeat: no-repeat;
   width: 100%;
-  height: 30rem;
+  height: 33rem;
   color: wheat;
+  position: relative;
+}
+
+.article_show {
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+  left: 5%;
 }
 
 .article_show a {
@@ -92,4 +131,19 @@
 .article_show a:hover {
   color: yellow;
   text-decoration: none;
+}
+
+.article_show_image {
+  height: 100%;
+  width: 100%;
+}
+.article_show_image1 {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: auto auto;      
+  }
 }
