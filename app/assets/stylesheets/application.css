@@ -19,19 +19,19 @@
 }
 
 .color1 {
-  color: #FD6000;
+  color: #fd6000;
 }
 
 nav {
   position: fixed !important;
   width: 100%;
   height: auto;
-  top: 0px;
+  top: 0.1px;
   z-index: 100;
 }
 
-.navbar-brand{
-  color: #FD6000 !important;
+.navbar-brand {
+  color: #fd6000 !important;
   font-family: 'Festive', cursive;
 }
 
@@ -50,21 +50,25 @@ nav {
   font-weight: 700;
 }
 
-.nav-link a:hover {
-  color: rgb(54, 51, 51);
-  text-decoration: none;
-  color: rgb(121, 118, 118);
-}
-
 .signing a {
   color: rgb(46, 45, 45) !important;
 }
 
-.login_nav{
-  color:rgb(46, 45, 45) !important;
+.dropdown-menu a {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
 }
 
-.login_nav:hover{
+.nav-link a:hover {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+}
+
+.login_nav{
+  color: rgb(46, 45, 45) !important;
+}
+
+.login_nav:hover {
   text-decoration: none;
   font-weight: 700;
   color: black;
@@ -78,19 +82,13 @@ nav {
   background-color: rgb(65, 58, 51) !important;
 }
 
-.dropdown-menu a{
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-}
-
 .random {
   width: 100%;
   height: 2.7rem;
 }
 
-
 .icon1 {
-  color: #FD6000;
+  color: #fd6000;
   margin-left: 5px;
   padding-top: 3px;
 }
@@ -98,8 +96,7 @@ nav {
 .footer1 {
   position: fixed;
   width: 100%;
-  bottom: 0px;
-  font-size: auto;
+  bottom: 0.1px;
   background-color: rgb(65, 58, 51);
   height: auto;
   justify-content: center;

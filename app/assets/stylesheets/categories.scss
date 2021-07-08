@@ -36,29 +36,26 @@
   color: #fd6000;
   font-weight: 400;
   text-decoration: underline 2px #fd6000;
-  font: bolder;
 }
 
 .category_article_title a {
   color: black;
-  font: bolder;
   font-weight: 500;
-  text-decoration: none;
-}
-
-.category_article_title a:hover {
-  color:#e72d2d;
   text-decoration: none;
 }
 
 .category_article_vote a {
   color: black;
-  font: bolder;
   font-weight: 500;
 }
 
+.category_article_title a:hover {
+  color: #e72d2d;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
-    .category_page {
+  .category_page {
     grid-template-columns: auto;
   }
 }

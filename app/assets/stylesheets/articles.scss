@@ -1,15 +1,14 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.most_popular {
-  margin-top: 3.5rem;
+.most_popular {  
   margin: 0.2rem;
+  margin-top: 3.5rem;
   width: 100%;
   height: 35rem;
   color: wheat;
   position: relative;
   background-size: 100% 100%;
-  position: relative;
 }
 
 .most_popular_image {
@@ -18,7 +17,8 @@
   height: 35rem;
   z-index: -5;
 }
-.popularimage{
+
+.popularimage {
   width: 100%;
   height: 32rem;
 }
@@ -27,15 +27,30 @@
   margin-left: 2rem;
   position: absolute;
   bottom: 21%;
-  width: auto;  
+  width: auto;
 }
 
-.most_popular_title a{
+.most_popular_title a {
   font-weight: bold;
   color: #fd6000;
 }
 
-.most_popular_title a:hover{
+.category_recent_title a {
+  color: white;
+  font-weight: 400;
+}
+
+.category_name a {
+  padding: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.article_show a {
+  color: white;
+}
+
+.most_popular_title a:hover {
   text-decoration: underline rgb(255, 251, 0) 1px;
   color: #fd6000;
 }
@@ -51,7 +66,6 @@
 .grid_container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-    
 }
 
 .category_container {
@@ -68,12 +82,6 @@
   top: 5%;
 }
 
-.category_name a {
-  padding: 1rem;
-  color: white;
-  font-weight: 400;
-}
-
 .category_name a:hover {
   text-decoration: underline yellow;
   color: white;
@@ -83,12 +91,6 @@
   position: absolute;
   left: 30%;
   bottom: 5%;
-}
-
-.category_recent_title a {
-  
-  color: white;
-  font-weight: 400;
 }
 
 .category_recent_title a:hover {
@@ -122,10 +124,6 @@
   z-index: 100;
   top: 5%;
   left: 5%;
-}
-
-.article_show a {
-  color: white;
 }
 
 .article_show a:hover {
@@ -179,7 +177,6 @@
 
 .form_label {
   color: #fd6000;
-  font: bolder;
   font-weight: 700;
 }
 
