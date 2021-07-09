@@ -2,7 +2,8 @@
 A Websites to see a different kind of fishing equipment used in different types of places like River, pond, Sea, etc. Here Article can be created. You can vote for any article of your choice and it is displayed on the home page if it has a maximum vote. The article is also divided into categories. Thanks.
 
 ## Deployment
-- Heroku Link: [Click here]()
+- Heroku Link: [Click here](https://limitless-sea-70591.herokuapp.com/)
+- Loon Video Link: [Click here](https://www.loom.com/share/d1b4ab43812545f49da59c2bd38b162b)
 
 ![Screenshot of the app](./pic2.PNG)
 ![Screenshot of the app](./pic1.PNG)
