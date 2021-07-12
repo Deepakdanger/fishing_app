@@ -49,6 +49,23 @@
   font-weight: 500;
 }
 
+.category_in_article {
+  font-weight: 700;
+  margin-top: 3px;
+  color: rgb(92, 12, 12);
+}
+
+.category_in_article a {
+  padding: 2px;
+  font-weight: 100;
+}
+
+.category_in_article a:hover {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
 .category_article_title a:hover {
   color: #e72d2d;
   text-decoration: none;

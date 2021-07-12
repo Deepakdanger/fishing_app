@@ -1,5 +1,5 @@
 
-<%if Article.count > 3 %>
+
 <div class="most_popular" >
   <div class="most_popular_title">
       
@@ -13,18 +13,20 @@
   <% @category.each do |category| %>
 
     <div class="category_container">
+      <%if category.articles.count > 0 %>
         <p class="category_recent_image"><%= image_tag category.articles.most_recent.first.image , :class =>"categoryrecentimage" if category.articles.most_recent.first.image.attached? %></p><br>
-       <p class="category_name"><%= link_to category.name,  category_path(category) %> </p>
+        <p class="category_name"><%= link_to category.name,  category_path(category) %> </p>
        
-       <div class="category_recent_title">
-       <%= link_to category.articles.most_recent.first.title,  article_path(category.articles.most_recent.first) %>
-       </div>
+        <div class="category_recent_title">
+          <%= link_to category.articles.most_recent.first.title,  article_path(category.articles.most_recent.first) %>
+        </div>
+      <%else%>
+        <p class="category_name"><%= link_to category.name,  category_path(category) %> </p>
+        <p>No Article</p>
+      <% end %>
     </div>
 
- <% end %>
- </div>
-<%else%>
-<p>No Article</p>
- <% end %>
+  <% end %>
+  </div>
 
 
