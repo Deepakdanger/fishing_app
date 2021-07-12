@@ -10,19 +10,20 @@
   color: wheat;
   position: relative;
   background-size: 100% 100%;
+  background-image: url(https://wallpaperchat.com/walls/full/6/2/a/434057.jpg);
 }
 
 .most_popular_image {
-  background-color: rgb(209, 212, 209);
   position: absolute;
-  top: 8%;
-  height: 35rem;
-  z-index: -5;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }
 
 .popularimage {
+  position: absolute;
   width: 100%;
-  height: 32rem;
+  height: 100%;
 }
 
 .most_popular_title {
@@ -30,6 +31,7 @@
   position: absolute;
   bottom: 21%;
   width: auto;
+  z-index: 10;
 }
 
 .most_popular_title a {
@@ -63,6 +65,7 @@
   bottom: 10%;
   width: auto;
   font-weight: 500;
+  z-index: 10;
 }
 
 .grid_container {
@@ -71,7 +74,8 @@
 }
 
 .category_container {
-  background-color: rgb(255, 134, 195);
+  background-image: url(https://i.pinimg.com/736x/7d/c5/c9/7dc5c98ab3f4413b7984dd792226fdda.jpg);
+  background-size: 100% 100%;
   height: 13rem;
   width: 98%;
   position: relative;
@@ -201,6 +205,13 @@
 
 .submit_button:hover {
   font-weight: 700;
+}
+
+.no_presence {
+  position: absolute;
+  top: 43%;
+  left: 36%;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 768px) {
