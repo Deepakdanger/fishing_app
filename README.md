@@ -3,7 +3,8 @@ A Websites to see a different kind of fishing equipment used in different types 
 
 ## Deployment
 - Heroku Link: [Click here](https://limitless-sea-70591.herokuapp.com/)
-- Loon Video Link: [Click here](https://www.loom.com/share/d1b4ab43812545f49da59c2bd38b162b)
+- Loom Video Link: [Click here](https://www.loom.com/share/d1b4ab43812545f49da59c2bd38b162b)
+- (n+1 querry Video link): [Click here](https://www.loom.com/share/e981010084de4936a94e3c8913d70add)
 
 ![Screenshot of the app](./pic2.PNG)
 ![Screenshot of the app](./pic1.PNG)
