@@ -74,6 +74,20 @@ Simply check out the corresponding branch using `git checkout`:
 ```
 $ git checkout <branch name>
 ```
+## Testing
+
+For test, In Gemfile include:
+
+```
+group :development, :test do
+  gem "database_cleaner"
+  gem "rspec-rails"
+end
+```
+Then, run `bundle install` and run
+```
+$ run rails generate rspec:install
+```
 
 ## Authors
 
