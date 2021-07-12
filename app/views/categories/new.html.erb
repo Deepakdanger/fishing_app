@@ -11,8 +11,9 @@
     <% end %>
   </div>
 
-  <div class="form_full">
+  <div class="form_full category_in_article mt-3">
     <%= form.submit 'Create Category', :class => 'submit_button' %>
+   <%= link_to "<-- Back to Article", new_article_path, :class => 'submit_button'%>
   </div>
 <% end %>
 </div>

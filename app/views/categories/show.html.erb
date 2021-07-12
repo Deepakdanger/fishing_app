@@ -1,6 +1,7 @@
-
-<div class="category_page">
-    <% @category.articles.most_recent.each do |article| %>
+    
+   <div class="category_page">
+   <% category1 = @category.articles.most_recent.includes(:category)%>
+    <% category1.each do |article| %>
         <div class="category_article_container"  >
             <div class="article_background">
             <%= image_tag article.image, :class =>"article_background_image" if article.image.attached?  %>
@@ -13,9 +14,8 @@
                  <%= link_to article.title,  article_path(article) %><span class="ml-3">-by <%= article.user.name %> </span> </p>
                 
                 <p><%= article.body %></p>
-
-                <p class="category_article_vote"><%= vote_or_unvote_btn(article) %></p>
-                
+                <p class="category_article_vote"><%= article.votes.count %> Votes</p>
+                <p class="category_article_vote"><%= vote_or_unvote_btn(article) %></p>                
             </div>
         </div>
     <% end %>
