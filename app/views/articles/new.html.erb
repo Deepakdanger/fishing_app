@@ -1,0 +1,44 @@
+
+<div class="backgound_div">
+<p class="backgound_dark"></p>
+<div class="form_div">
+<%= form_with model: @article do |form| %>
+  <div class="form_full">
+  <%= form.label :category , :class =>"form_label"%><br>
+    <%= form.select :category_id,Category.all.pluck(:name,:id),{prompt:'select'},{class: "form-control"}%>
+    <p class="category_in_article"> For New Category,Click Here -><%= link_to "Create Category", new_category_path ,:class => 'submit_button'%></p>
+    <% @article.errors.full_messages_for(:category_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="form_full">
+    <%= form.label :title , :class =>"form_label" %><br>
+    <%= form.text_field :title , :class =>"form_field"%>
+    <% @article.errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="form_full">
+    <%= form.label :body , :class =>"form_label"%><br>
+    <%= form.text_area :body , :class =>"form_field"%><br>
+    <% @article.errors.full_messages_for(:body).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="form_full">
+    <%= form.label :image , :class =>"form_label"%><br>
+    <%= form.file_field :image %><br>
+    <% @article.errors.full_messages_for(:image).each do |message| %>
+      <div><%= message %></div>
+      <% end %>
+  </div><br>
+
+  <div class="form_full">
+    <%= form.submit 'Create Article', :class => 'submit_button' %>
+  </div>
+<% end %>
+</div>
+</div>

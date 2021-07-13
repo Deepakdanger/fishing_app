@@ -1,0 +1,78 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.category_page {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0.2rem;
+  margin-top: 3.6rem;
+}
+
+.category_article_container {
+  width: 98%;
+  height: 17rem;
+  display: flex;
+  border: chocolate 1px solid;
+  margin-top: 0.2rem;
+}
+
+.article_background {
+  width: 48%;
+  background-color: blueviolet;
+}
+
+.article_background_image {
+  width: 100%;
+  height: 100%;
+}
+
+.article_discription {
+  padding-left: 5px;
+  width: 49%;
+}
+
+.name_category {
+  color: #fd6000;
+  font-weight: 400;
+  text-decoration: underline 2px #fd6000;
+}
+
+.category_article_title a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.category_article_vote a {
+  color: black;
+  font-weight: 500;
+}
+
+.category_in_article {
+  font-weight: 700;
+  margin-top: 3px;
+  color: rgb(92, 12, 12);
+}
+
+.category_in_article a {
+  padding: 2px;
+  font-weight: 100;
+}
+
+.category_in_article a:hover {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
+.category_article_title a:hover {
+  color: #e72d2d;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .category_page {
+    grid-template-columns: auto;
+  }
+}

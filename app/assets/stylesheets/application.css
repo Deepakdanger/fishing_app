@@ -13,3 +13,93 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.color1 {
+  color: #fd6000;
+}
+
+nav {
+  position: fixed !important;
+  width: 100%;
+  height: auto;
+  top: 0.1px;
+  z-index: 100;
+}
+
+.navbar-brand {
+  color: #fd6000 !important;
+  font-family: 'Festive', cursive;
+}
+
+.nav-item a {
+  color: rgb(68, 66, 66);
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: bolder;
+  color: rgb(226, 30, 30);
+}
+
+.nav-link a {
+  color: rgb(68, 66, 66);
+  font-weight: 700;
+}
+
+.signing a {
+  color: rgb(46, 45, 45) !important;
+}
+
+.dropdown-menu a {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.nav-link a:hover {
+  color: rgb(54, 51, 51);
+  text-decoration: none;
+}
+
+.login_nav {
+  color: rgb(46, 45, 45) !important;
+}
+
+.login_nav:hover {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.dropdown-menu {
+  height: 500px;
+  width: 15rem;
+  font-weight: 500;
+  color: rgb(253, 10, 91);
+  background-color: rgb(65, 58, 51) !important;
+}
+
+.random {
+  width: 100%;
+  height: 2.7rem;
+}
+
+.icon1 {
+  color: #fd6000;
+  margin-left: 5px;
+  padding-top: 3px;
+}
+
+.footer1 {
+  position: fixed;
+  width: 100%;
+  bottom: 0.1px;
+  background-color: rgb(65, 58, 51);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

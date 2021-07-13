@@ -1,0 +1,20 @@
+
+<div class="backgound_div">
+<p class="backgound_dark"></p>
+<div class="form_div">
+<%= form_with model: @category do |form| %>
+  <div class="form_full">
+    <%= form.label :name , :class =>"form_label" %><br>
+    <%= form.text_field :name , :class =>"form_field"%>
+    <% @category.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="form_full category_in_article mt-3">
+    <%= form.submit 'Create Category', :class => 'submit_button' %>
+   <%= link_to "<-- Back to Article", new_article_path, :class => 'submit_button'%>
+  </div>
+<% end %>
+</div>
+</div>
