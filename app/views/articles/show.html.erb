@@ -9,5 +9,28 @@
     <p class="article_show_image"><%= image_tag @article.image, :class =>"article_show_image1" if @article.image.attached?  %></p>
 </div>
 
-
+<div class="backgound_div">
+<p class="backgound_dark"></p>
+<div class="form_div">
+<%= form_with model: [ @article, @article.comments.build ] do |form| %>
+  <div>
+    <%= form.label :Comment, :class =>"form_label" %><br>
+    <%= form.text_area :content , :class =>"form_field"%>
+  </div>
+  <div class="form_full">
+    <%= form.submit 'Comment', :class => 'submit_button' %>
+  </div>
+<% end %>
+</div>
+    <div class="comment_div">
+    <h5 class="form_label">Comments</h5>
+    <%if @article.comments.count > 0 %>
+    <% @article.comments.each do |comment| %>
+        <p>           
+            <%= comment.content %>
+        </p>
+    <% end %>
+    <% end %>
+    </div>
+</div>
  
