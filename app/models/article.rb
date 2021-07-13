@@ -5,6 +5,7 @@ class Article < ApplicationRecord
   validates :image, presence: true
   validates :category_id, presence: true
 
+  has_many :comments
   belongs_to :user
   belongs_to :category
   has_many :votes, dependent: :destroy
